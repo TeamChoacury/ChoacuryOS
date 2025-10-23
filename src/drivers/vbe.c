@@ -1,6 +1,7 @@
 /* now we can have better graphics */
 
 #include "vbe.h"
+#include "utils.h"
 #include "types.h"
 #include "../memory/kmalloc.h"
 // https://github.com/hubenchang0515/font8x16/blob/master/font8x16.h
@@ -370,5 +371,6 @@ void BgaSetVideoMode(unsigned int Width, unsigned int Height, unsigned int BitDe
 void BgaSetBank(unsigned short BankNumber){
     BgaWriteRegister(VBE_DISPI_INDEX_BANK, BankNumber);
 }
+
 
 
